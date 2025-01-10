@@ -31,10 +31,10 @@ services:
       - SEMAPHORE_PLAYBOOK_PATH=/tmp/semaphore/
       - SEMAPHORE_ADMIN_PASSWORD=changeme  # change!
       - SEMAPHORE_ADMIN_NAME=admin
-      - SEMAPHORE_ADMIN_EMAIL=example@example.com
+      - SEMAPHORE_ADMIN_EMAIL=example@example.com #change to your email
       - SEMAPHORE_ADMIN=admin
-      - SEMAPHORE_SLACK_ALERT=true
-      - SEMAPHORE_SLACK_URL=<slack URL>
+      - SEMAPHORE_SLACK_ALERT=true #optional
+      - SEMAPHORE_SLACK_URL=<slack URL> #optional
       - SEMAPHORE_ACCESS_KEY_ENCRYPTION=<generate>  # add to your access key encryption! use "head -c32 /dev/urandom | base64" to generate
       - ANSIBLE_HOST_KEY_CHECKING=false  # (optional) change to true if you want to enable host key checking
     volumes:
