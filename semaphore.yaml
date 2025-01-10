@@ -35,7 +35,7 @@ services:
       - SEMAPHORE_ADMIN=admin
       - SEMAPHORE_SLACK_ALERT=true
       - SEMAPHORE_SLACK_URL=<slack URL>
-      - SEMAPHORE_ACCESS_KEY_ENCRYPTION=<generate>  # add to your access key encryption !
+      - SEMAPHORE_ACCESS_KEY_ENCRYPTION=<generate>  # add to your access key encryption! use "head -c32 /dev/urandom | base64" to generate
       - ANSIBLE_HOST_KEY_CHECKING=false  # (optional) change to true if you want to enable host key checking
     volumes:
       - ./inventory/:/inventory:ro
